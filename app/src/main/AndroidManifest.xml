@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.turborentals">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".GlobalVariables"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreen">
+        <activity
+            android:name=".ui.editBooking.EditBookingActivity"
+            android:exported="false"
+            android:theme="@style/TurboStyle"/>
+        <activity
+            android:name=".ui.bookingHistory.BookingHistoryActivity"
+            android:exported="false"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name=".ui.bookingDetails.BookingDetailsActivity"
+            android:exported="false"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name=".ui.bookings.BookingActivity"
+            android:exported="true"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name=".ui.rentalsHistory.RentalsHistoryActivity"
+            android:exported="true"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name=".ui.allRentals.AllRentalsActivity"
+            android:exported="true"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.TurboRentals" />
+        <activity
+            android:name=".ui.addRental.AddRentalActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.turborentals.ui.profile.ProfileActivity"
+            android:exported="true"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name=".ui.auth.OtpActivity"
+            android:exported="true"
+            android:theme="@style/TurboStyle" />
+        <activity
+            android:name=".ui.auth.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".alarmDisbatcher.AlarmReceiver"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TurboRentals</string>
+    <string name="default_text">Car</string>
+    <string name="default_num">999 \n Available</string>
+    <string name="rental">Scooty</string>
+    <string name="book">Book</string>
+    <string name="add">Add</string>
+    <string name="bookings">bookings</string>
+    <string name="collect">collect</string>
+    <string name="model_name">Model Name</string>
+    <string name="dl_67_a_7283">DL 67 A 7283</string>
+    <string name="on_rent">On Rent</string>
+    <string name="_365_days">365 Days</string>
+    <string name="available">Available</string>
+    <string name="earning">Earning</string>
+    <string name="rs_9000">Rs 9000</string>
+    <string name="history">History</string>
+</resources>

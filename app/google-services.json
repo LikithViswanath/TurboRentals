@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1059456322329",
+    "project_id": "turbo-rentals-328719",
+    "storage_bucket": "turbo-rentals-328719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059456322329:android:40e3c04009b4ef67d75388",
+        "android_client_info": {
+          "package_name": "com.example.turborentals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059456322329-t7t50jda9n75u99th9bsfdf6q829gm0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.turborentals",
+            "certificate_hash": "528aa2da59b28cd6d54f98593980fa5952af2c49"
+          }
+        },
+        {
+          "client_id": "1059456322329-uhvlj6l0tdfqr9tguihu5l8pir7cl6c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwsS70f6J1wl5GlanjtLfcoz7-3Qz1v4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059456322329-uhvlj6l0tdfqr9tguihu5l8pir7cl6c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

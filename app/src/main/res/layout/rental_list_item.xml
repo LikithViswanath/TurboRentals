@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="rentalDetails"
+            type="com.example.turborentals.data.RentalDetails" />
+        <variable
+            name="setOnHistoryListener"
+            type="com.example.turborentals.ui.allRentals.SetHistoryListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        app:cardElevation="@dimen/elevation"
+        app:layout_marginBaseline="@dimen/margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/modelNumberTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="21dp"
+                    android:text="@string/model_name"
+                    android:textStyle="bold"
+                    app:setModelName="@{rentalDetails}"/>
+
+                <TextView
+                    android:id="@+id/rcNumberTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/semi_drawable"
+                    android:gravity="center"
+                    android:text="@string/dl_67_a_7283"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:setRcNumber="@{rentalDetails}"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/rental_list_style"
+                    android:layout_width="10dp"
+                    android:layout_height="48dp"
+                    android:background="@mipmap/spped_meter_round" />
+
+                <LinearLayout
+                    style="@style/rental_linera_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/semi_drawable">
+
+                    <TextView
+                        android:id="@+id/km00"
+                        style="@style/rental_reading_textView"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        app:setKm00="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km01"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm01="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km02"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm02="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km03"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm03="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km04"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm04="@{rentalDetails}"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/rental_linera_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/semi_drawable"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/km10"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm10="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km11"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm11="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km12"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm12="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km13"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm13="@{rentalDetails}"/>
+
+                    <TextView
+                        android:id="@+id/km14"
+                        style="@style/rental_reading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/total_rental_text_view_drawable"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:setKm14="@{rentalDetails}"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rentInfoTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/on_rent"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/daysOnRentTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_brawable"
+                    android:backgroundTint="#E1E1E1"
+                    android:text="@string/_365_days"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:setOnRentDays="@{rentalDetails}"/>
+
+                <TextView
+                    android:id="@+id/statusTextIView"
+                    style="@style/rental_list_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_brawable"
+                    android:backgroundTint="@color/good_green"
+                    android:text="@string/available"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:setStatus="@{rentalDetails}"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/historyTextVIew"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/earningsinfoTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/earning"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/earningsTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_brawable"
+                    android:backgroundTint="#E1E1E1"
+                    android:text="@string/rs_9000"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:setEarnings="@{rentalDetails}"/>
+
+                <TextView
+                    android:id="@+id/historyTextView"
+                    style="@style/rental_list_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_brawable"
+                    android:backgroundTint="#E1E1E1"
+                    android:text="@string/history"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:onClick="@{()->setOnHistoryListener.onClick(rentalDetails)}"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
